@@ -1,0 +1,468 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 100%;
+  background-color: #000000; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  font-family: "", sans-serif;
+}
+
+.container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .logo h1 {
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 650px;
+  margin-top: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .links a {
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #000000; 
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 20px;
+}
+
+.container .links a:hover {
+  background-color: #6a0dad;
+}
+
+header {
+  width: 90%;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Unica One", sans-serif;
+}
+
+header .counter {
+  background-color: #6a0dad;
+  border-radius: 5px;
+  color: #6a0dad;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+header .discord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+header .discord a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: royalblue;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .discord a:hover {
+  background-color: #6a0dad;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+}
+
+header .logo a {
+  text-decoration: none;
+  color: black;
+}
+
+header .logo a span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.terms-container {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  margin: 25px auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px lightgray;
+          box-shadow: 0px 0px 10px lightgray;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Fira Sans" !important;
+}
+
+.terms-container h1 {
+  font-size: 30px;
+}
+
+.terms-container p {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 16px;
+  margin-left: 5px;
+  line-height: 25px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.privacy-container {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  margin: 25px auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px lightgray;
+          box-shadow: 0px 0px 10px lightgray;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Fira Sans" !important;
+}
+
+.privacy-container h1 {
+  font-size: 30px;
+}
+
+.privacy-container p {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 16px;
+  margin-left: 5px;
+  line-height: 25px;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.team-container {
+  font-family: "Unica One" !important;
+  font-weight: bolder;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 25px;
+}
+
+.team-container .row:not(:nth-child(1)) {
+  margin-top: 20px;
+}
+
+.team-container .card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 15px lightgrey;
+          box-shadow: 0px 0px 15px lightgrey;
+  padding: 25px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 250px;
+  margin-bottom: 25px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: starttus x solid transparent;
+  position: relative;
+}
+
+.team-container .card:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-color: #ff173e;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.team-container .card .card-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-container .card .card-head .discord-img {
+  padding: 2px;
+  border-radius: 50%;
+  border: starttus solid #6a0dad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.team-container .card .card-head .discord-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.team-container .card .card-head .discord-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.team-container .card .card-head .discord-tag span:nth-child(1) {
+  background-color: royalblue;
+  color: green;
+  padding: 7px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.team-container .card .card-head .discord-tag span:nth-child(2) {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.team-container .card .card-body {
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+
+.team-container .card .card-body .roles {
+  margin-top: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.team-container .card .card-body .roles .role {
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  font-size: 14px;
+}
+
+.team-container .card .card-body .roles .role:not(:nth-child(1)) {
+  margin-left: 10px;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Unica One", sans-serif;
+}
+
+footer a {
+  padding: 5px 0;
+  color: royalblue;
+  font-size: 15px;
+}
+
+footer a:last-child {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=index.css.map */
